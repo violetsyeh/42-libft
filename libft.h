@@ -6,7 +6,7 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/13 18:16:02 by vyeh              #+#    #+#             */
-/*   Updated: 2017/06/13 18:16:06 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/06/20 18:11:55 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
-size_t				ft_strlen(const char *s);
+size_t				ft_strlen(const char *str);
 char				*ft_strdup(const char *s1);
 char				*ft_strcpy(char *dst, const char *src);
 char				*ft_strncpy(char *dst, const char *src, size_t len);
@@ -100,8 +100,6 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
-int					ft_isupper(int c);
-int					ft_islower(int c);
 int					ft_isspace(int c);
 int					ft_words(char const *s, char c);
 void				ft_swap(int *a, int *b);
