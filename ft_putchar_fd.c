@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/29 15:29:11 by vyeh              #+#    #+#             */
-/*   Updated: 2017/06/29 17:28:41 by vyeh             ###   ########.fr       */
+/*   Created: 2017/06/29 17:28:47 by vyeh              #+#    #+#             */
+/*   Updated: 2017/06/29 17:33:46 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+void	ft_putchar_fd(char c, int fd)
 {
-	void *mem;
-
-	if ((mem = (void*)malloc(size)) && size)
-	{
-		ft_bzero(mem, size);
-		return (mem);
-	}
-	return (NULL);
+	write(fd, &c, 1);
 }
