@@ -6,7 +6,7 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/13 18:16:02 by vyeh              #+#    #+#             */
-/*   Updated: 2017/06/22 13:09:53 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/07/01 23:28:14 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,8 +82,6 @@ int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s);
-char				**ft_strsplit(char const *s, char c);
-char				*ft_itoa(int n);
 void				ft_putchar(char c);
 void				ft_putstr(char const *s);
 void				ft_putendl(char const *s);
@@ -92,23 +90,5 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
-
-t_list				*ft_lstnew(void const *content, size_t content_size);
-void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
-void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
-void				ft_lstadd(t_list **alst, t_list *new);
-void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-
-int					ft_isspace(int c);
-int					ft_words(char const *s, char c);
-void				ft_swap(int *a, int *b);
-int					ft_power(int nb, int power);
-int					ft_sqrt(int nb);
-int					ft_isprime(int nb);
-size_t				d_strlen(char *s, int index, int delim);
-char  				*ft_strndup (const char *s, size_t n);
-
-int 				get_next_line(const int fd, char **line);
 
 #endif
