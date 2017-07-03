@@ -6,34 +6,37 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/13 17:11:29 by vyeh              #+#    #+#             */
-/*   Updated: 2017/06/29 14:19:14 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/07/02 17:01:59 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+int		ft_atoi(const char *str)
 {
-	int n;
-	int sign;
-	int i;
+	int result;
+	int negatif;
 
-	n = 0;
-	i = 0;
-	sign = 1;
-	while (str[i] == '\n' || str[i] == '\t' || str[i] == '\v' ||
-			str[i] == ' ' || str[i] == '\f' || str[i] == '\r')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	result = 0;
+	negatif = 0;
+	if (str)
 	{
-		if (str[i] == '-')
-			sign = -1;
-		i++;
+		while (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\r'
+			|| *str == '\f' || *str == '\v')
+			str++;
+		if (*str == '-')
+		{
+			negatif = 1;
+			str++;
+		}
+		else if (*str == '+')
+			str++;
+		while (*str >= '0' && *str <= '9')
+		{
+			result += *str++ - '0';
+			if (*str >= '0' && *str <= '9')
+				result *= 10;
+		}
 	}
-	while ((str[i] != '\0') && (str[i] >= '0' && str[i] <= '9'))
-	{
-		n = n * 10 + str[i] - 48;
-		i++;
-	}
-	return (n * sign);
+	return (negatif ? -result : result);
 }
