@@ -6,13 +6,13 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/21 16:07:43 by vyeh              #+#    #+#             */
-/*   Updated: 2017/07/02 18:24:03 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/07/02 19:09:55 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-  char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
 	char	*ptr;

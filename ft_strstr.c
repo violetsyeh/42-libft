@@ -6,15 +6,15 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/20 13:54:00 by vyeh              #+#    #+#             */
-/*   Updated: 2017/07/02 18:24:01 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/07/02 19:13:33 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strstr(const char *haystack, const char *needle)
+char	*ft_strstr(const char *haystack, const char *needle)
 {
-  int i;
+	int i;
 	int j;
 
 	i = 0;

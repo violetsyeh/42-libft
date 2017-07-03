@@ -6,13 +6,13 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/29 17:37:34 by vyeh              #+#    #+#             */
-/*   Updated: 2017/07/02 18:24:18 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/07/02 19:26:10 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr(int n)
+void	ft_putnbr(int n)
 {
 	unsigned int	nb;
 

@@ -6,7 +6,7 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/13 17:11:29 by vyeh              #+#    #+#             */
-/*   Updated: 2017/07/02 18:17:04 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/07/02 19:40:10 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,13 @@ static int	check_overflow(unsigned long nbr, int new_digit, int sign)
 	return (1);
 }
 
-int		ft_space(int c)
+static int	ft_space(int c)
 {
 	return ((c == '\n') || (c == '\t') || (c == '\v') ||
 			(c == ' ') || (c == '\f') || (c == '\r'));
 }
 
-int			ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	unsigned long	nbr;
 	int				sign;

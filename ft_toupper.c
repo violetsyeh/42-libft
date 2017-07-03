@@ -6,13 +6,13 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/18 15:45:14 by vyeh              #+#    #+#             */
-/*   Updated: 2017/07/02 18:23:55 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/07/02 19:25:13 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int		ft_toupper(int c)
 {
 	if ((c >= 'a' && c <= 'z'))
 		return (c - 32);

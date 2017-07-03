@@ -6,15 +6,15 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/21 18:09:05 by vyeh              #+#    #+#             */
-/*   Updated: 2017/07/02 18:24:07 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/07/02 19:19:06 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-  size_t	i;
+	size_t i;
 
 	i = 0;
 	if (n == 0)

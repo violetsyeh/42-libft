@@ -6,13 +6,13 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/29 18:15:00 by vyeh              #+#    #+#             */
-/*   Updated: 2017/07/02 18:24:24 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/07/02 19:14:16 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_strclr(char *s)
+void	ft_strclr(char *s)
 {
 	char			*str;
 	unsigned int	counter;
