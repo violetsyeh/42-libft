@@ -6,7 +6,7 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/13 18:16:02 by vyeh              #+#    #+#             */
-/*   Updated: 2017/07/02 17:11:26 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/07/02 18:18:45 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,5 +92,6 @@ void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 char				*ft_itoa(int n);
 char				**ft_strsplit(char const *s, char c);
+
 
 #endif

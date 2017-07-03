@@ -6,7 +6,7 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/20 16:19:56 by vyeh              #+#    #+#             */
-/*   Updated: 2017/07/01 23:48:39 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/07/02 17:48:47 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 	size_t	j;
 	char	*str;
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
 	i = 0;
 	j = 0;
 	if (!*s2)

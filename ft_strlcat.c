@@ -6,7 +6,7 @@
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/23 16:27:51 by vyeh              #+#    #+#             */
-/*   Updated: 2017/07/02 17:20:38 by vyeh             ###   ########.fr       */
+/*   Updated: 2017/07/02 17:45:38 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	j;
 	size_t	result;
 
-	if (!dst || !src)
-		return (0);
 	i = 0;
 	j = 0;
 	result = ft_strlen(src);

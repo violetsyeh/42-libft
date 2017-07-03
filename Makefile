@@ -27,7 +27,7 @@ $(NAME):
 	$(CC) $(CFLAGS) -c $(SRC)
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
-
+	
 clean:
 	rm -rf $(OBJ)
 
