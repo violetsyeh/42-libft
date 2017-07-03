@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: vyeh <vyeh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/13 17:11:29 by vyeh              #+#    #+#             */
-/*   Updated: 2017/07/02 19:49:00 by vyeh             ###   ########.fr       */
+/*   Created: 2017/07/02 19:49:00 by vyeh              #+#    #+#             */
+/*   Updated: 2017/07/02 19:53:46 by vyeh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static int	check_overflow(unsigned long nbr, int new_digit, int sign)
 static int	ft_space(int c)
 {
 	return ((c == '\n') || (c == '\t') || (c == '\v') ||
-			(c == ' ') || (c == '\f') || (c == '\r'));
+		(c == ' ') || (c == '\f') || (c == '\r'));
 }
 
 int	ft_atoi(const char *str)
